@@ -51,4 +51,14 @@ INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '22:
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:00');
 
 
-SELECT * FROM people;
+-- SELECT * FROM people;
+SELECT name FROM people;
+
+UPDATE people SET name = 'Krusty the Clown' WHERE name = 'Crusty the Clown';
+
+SELECT name FROM people WHERE name = 'Homer Simpson';
+
+DELETE FROM movies WHERE name = 'Batman Begins';
+
+-- SELECT * FROM people;
+SELECT * FROM movies;

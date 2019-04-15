@@ -48,9 +48,68 @@ id |          name
 
 
 2.  Return ONLY the name column from the 'people' table
+
+SELECT name FROM people;
+
+name          
+------------------------
+Homer Simpson
+Marge Simpson
+Lisa Simpson
+Maggie Simpson
+Patty Bouvier
+Selma Bouvier
+Kent Brockman
+Ned Flanders
+Barney Gumble
+Itchy
+Eric Cartman
+Scratchy
+Crusty the Clown
+Montgomery Burns
+Mayor Joe Quimby
+Apu Nahasapeemapetilon
+(16 rows)
+
 3.  Oops! Someone spelled Krusty The Clown's name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
+
+UPDATE people SET name = 'Krusty the Clown' WHERE name = 'Crusty the Clown';
+
+id |          name          
+----+------------------------
+ 1 | Homer Simpson
+ 2 | Marge Simpson
+ 3 | Lisa Simpson
+ 4 | Maggie Simpson
+ 5 | Patty Bouvier
+ 6 | Selma Bouvier
+ 7 | Kent Brockman
+ 8 | Ned Flanders
+ 9 | Barney Gumble
+10 | Itchy
+11 | Eric Cartman
+12 | Scratchy
+14 | Montgomery Burns
+15 | Mayor Joe Quimby
+16 | Apu Nahasapeemapetilon
+13 | Krusty the Clown
+(16 rows)
+
+
 4.  Return ONLY Homer Simpson's name from the 'people' table.
+
+SELECT name FROM people WHERE name = 'Homer Simpson';
+
+name      
+---------------
+Homer Simpson
+(1 row)
+
 5.  The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
+
+
+
+
 6.  We forgot one of the main characters! Add Bart Simpson to the 'people' table
 7.  Eric Cartman has decided to hijack our movie evening, Remove him from the table of people.
 8.  The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this.
